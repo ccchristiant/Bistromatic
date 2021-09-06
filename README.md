@@ -1,16 +1,10 @@
 ## B1 - Unix & C Lab Seminar
 
-## B-CPE-
+## B-CPE-101
 
 # Bistro-matic
 
 ## Kind of Basic Calculator
-
-```
-3.
-```
-
-# Bistro-matic
 
 ```
 binary name : calc
@@ -50,10 +44,9 @@ USAGE
 
 ```
 If a syntax error occurs, the program must display the string defined by the
-SYNTAX_ERROR_MSGmacro.
-For any other error, the program must display the string defined by theERROR_MSGmacro.
+SYNTAX_ERROR_MSG macro.
+For any other error, the program must display the string defined by the ERROR_MSG macro.
 ```
-#### 1
 
 
 ```
@@ -61,6 +54,7 @@ The libC is forbidden, except the following functions:read, write, malloc, free,
 ```
 ### ∇ Terminal - + x
 
+```
 ∼/B-CPE-101> echo ‘3+6’ | ./calc 0123456789 ‘()+-*/%’ 3 ; echo
 9
 ∼/B-CPE-101> echo ‘3v6’ | ./calc 0123456789 ‘{}vwxyz’ 3 ; echo
@@ -68,21 +62,18 @@ The libC is forbidden, except the following functions:read, write, malloc, free,
 ∼/B-CPE-101> echo ‘----++-6(12)’ | ./calc 0123456789 ‘()+-*/%’ 10 ; echo
 syntax error
 ∼/B-CPE-101> echo ‘----++-6*12’ | ./calc 0123456789 ‘()+-*/%’ 11 | cat -e ; echo
-
--
+-72
 ∼/B-CPE-101> echo ‘-(12-(4*32))’ | ./calc 0123456789 ‘()+-*/%’ 12 | cat -e ; echo
 116
-∼/B-CPE-101> echo ‘-(e@-(;*!@))’ | ./calc ‘0A@!;ie& ]’ ‘()+-*/%’ 12 | cat -e ;
-echo
+∼/B-CPE-101> echo ‘-(e@-(;*!@))’ | ./calc ‘0A@!;ie& ]’ ‘()+-*/%’ 12 | cat -e ; echo
 ee
 ∼/B-CPE-101> echo ‘-(12*(13+15/5*(6/(12+14%(30%5+(10*25)-46)+16)-20)/43)*20)
 *(-(12-98*42)*(16+63-50/3))’ | ./calc 0123456789 ‘()+-*/%’ 84 | cat -e ; echo
--
-
+-744629760
 ```
-The givenmain.candbistromatic.hfiles are given as-is , feel free to use them (or not).
+```
+The given main.c and bistromatic.h files are given as-is , feel free to use them (or not).
 They are not guaranteed to be fully compliant with the coding style.
 ```
-#### 2
 
 
